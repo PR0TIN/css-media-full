@@ -166,7 +166,7 @@ background-color: rgb(94, 93, 93);
 		font-style: normal;
 }
 
-.botton_in_second_flex{
+.button_in_second_flex{
 
 	display: flex;
 	justify-content: center;
@@ -185,6 +185,14 @@ background-color: rgb(94, 93, 93);
 	margin-top: 10px;
 	border-radius: 5px;
 }
+
+.button_in_second_flex:hover{
+background-color:#112e76;
+}
+.button_in_second_flex:active{
+background-color: #1f47ab;
+}
+
 
 .text_in_botton {
    
