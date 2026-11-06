@@ -151,15 +151,16 @@ text-align: center;
 font-weight: 400;
 }
 
-.first_text{
+.for_h1{
+display: flex;
+flex-direction: column;
 font-size: 90px;
+font-weight: 400;
 
 }
 
-.second_text{
-font-size: 90px;
 
-}
+
 .therd_text{
 	font-size: 20px;
 	align-self: center;
@@ -324,6 +325,7 @@ margin-bottom: 20px;
 .under_love_mode{
 font-size: 20px;
 width: 600px;
+font-weight: 400;
 }
 
 
@@ -966,19 +968,12 @@ margin-top: 0px;
 font-style:normal;
 }
 
-.first_text{
+.for_h1{
 font-size: 80px;
-transform: scaleX(0.9);
 letter-spacing: 1.5px;
 }
 
-.second_text{
-font-size: 80px;
 
-transform: scaleX(0.9);
-letter-spacing: 1.5px;
-
-}
 .therd_text{
 	font-size: 18px;
 	max-width: 600px;
@@ -1216,13 +1211,10 @@ gap: 20px;
 
 
 @media(max-width:640px) {
-.first_text {
+.for_h1{
  font-size: 50px;
 }
 
-.second_text {
- font-size: 50px;
-}
 
 .therd_text{
 display: none;	
@@ -1244,6 +1236,12 @@ border: 1px solid #2B4074 ;
 height: 10px;
 width: 10px;
 }
+
+.flex_for_arrow{
+top: 70px;
+
+}
+
 	
 
 .Love_aww_flex{
@@ -1372,12 +1370,10 @@ padding: 0 0px;
 
 
 @media (max-width:320px){
-.first_text {
+.for_h1{
  font-size: 30px;
 }
-.second_text {
- font-size: 30px;
-}
+
 .botton_in_second_flex{
 	display: none;
 }
