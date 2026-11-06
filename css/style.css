@@ -97,6 +97,17 @@ text-align: center;
 	align-self: center;
 }
 
+.div_in_botton_color:hover{
+background-color: #a2a2a2;	
+transition-duration: 0.3s;
+}
+.div_in_botton_color:active{
+background-color: #ebeaea;	
+	
+}
+
+
+
 .div_in_botton_color{
 display: flex;
 flex-direction: column;
@@ -142,12 +153,12 @@ font-weight: 400;
 
 .first_text{
 font-size: 90px;
-transform: scaleY(1.2);
+
 }
 
 .second_text{
 font-size: 90px;
-transform: scaleY(1.2);
+
 }
 .therd_text{
 	font-size: 20px;
@@ -176,10 +187,9 @@ background-color: rgb(94, 93, 93);
 	width: 200px;
 	background-color:#2B4074 ;
 
-	color: white;
-    font: inherit;
-	 border: none;
-	 cursor: pointer;
+	position: relative;
+	 transition-duration: 100ms;
+	 top: 0px;
 
 	margin-bottom: 30px;
 	margin-top: 10px;
@@ -189,18 +199,17 @@ background-color: rgb(94, 93, 93);
 .button_in_second_flex:hover{
 background-color:#112e76;
 }
+
 .button_in_second_flex:active{
 background-color: #1f47ab;
+top: 5px;
 }
 
-
 .text_in_botton {
-   
-		font-size: 18px;
-				font-weight: 400;
-				font-style: normal;
-
-	}
+font-size: 18px;
+font-weight: 400;
+font-style: normal;
+}
 
 
 .dot_in_down_intro_flex{
@@ -237,10 +246,13 @@ position: absolute;
 top: 0;
 bottom: 0;
 right: 0;
+/* хтібокс МИСИ ГЛОб накладвася на частину стрілки */
+z-index: 1;
 align-items: center;
 display: flex;
 flex-direction: column;
 justify-content: center;
+
 }
 
 .arrow{
@@ -250,21 +262,40 @@ height: 70px;
 justify-content: center;
 align-items: center;
 font-size: 30px;
+color: white;
+transition-duration: 100ms;
+
 
 }
+
+
 
 
 .arrow_1{
 background-color: #2B4074 ;
-color: white ;
-
 
 }
+
+.arrow_1:hover{
+background-color:#112e76;
+}
+.arrow_1:active{
+background-color: #1f47ab;
+}
+
+
+
 .arrow_2{
 background-color: rgb(168, 165, 165);
-color: white;
+
 }
 
+.arrow_2:hover{
+background-color: rgb(121, 119, 119);
+}
+.arrow_2:active{
+background-color: rgb(186, 184, 184);
+}
 
 
 .Love_aww_flex{
@@ -305,14 +336,36 @@ width: 600px;
 	display: flex;
 	justify-content: center;
 align-items: center;
+
+top: 0;
+position: relative;
 }
+
+.call_me:hover {
+background-color: #afaeae;
+
+}
+.call_me:active {
+background-color: #e6e4e4;
+top: 5px;
+}
+
+
+
 
 .call_me_text{
+white-space: nowrap;
 font-size: 19px;
-	font-weight: 500;
-	color: #2B4074;
+font-weight: 500;
+color: #2B4074;
+display: block;
+height: 100%;
+width: 100%;
 
 }
+
+
+
 
 
 
@@ -567,6 +620,18 @@ background-color: #2B4074;
 max-width: 250px ;
 height: 65px;
 }
+
+
+.slide4_botton:hover{
+background-color:#112e76;
+}
+
+.slide4_botton:active{
+background-color: #1f47ab;
+top: 5px;
+
+}
+
 
 .slide4_in_botton{
 font-size: 20px;
@@ -833,7 +898,20 @@ height: 42px;
 width: 100%;
 margin-top: 90px;
 font-size: 18px;
+
+transition-duration: 0.5s;
 }
+
+.at_top_arrow_flex:hover{
+background-color: #dedccd;
+
+}
+
+.at_top_arrow_flex:active{
+background-color: #e8e8e3;
+
+}
+
 
 .at_top_arrow_text{
 	font-size:  16px;
@@ -842,13 +920,20 @@ font-size: 18px;
 	letter-spacing: 2px;
 	transform: scaleY(1.2);
 }
+
+
 .at_top_arrow{
 color: #2B4074;
 margin: 0 140px 0 25px;
 }
 
-
-
+button{
+border: none;
+color: white;
+ font: inherit;
+ cursor: pointer;
+ background: transparent;
+}
 
 
 .pictur_for_img{
